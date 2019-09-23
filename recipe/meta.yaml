@@ -1,15 +1,14 @@
 {% set name = "super_state_machine" %}
 {% set version = "2.0.2" %}
-{% set sha = "e038a4c573ab80f157bf726c3036367919704f62cd166eb46837143165035958" %}
+{% set sha256 = "e038a4c573ab80f157bf726c3036367919704f62cd166eb46837143165035958" %}
 
 package:
-  name: {{ name }}
+  name: {{ name|lower }}
   version: {{ version }}
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  fn: super_state_machine-{{ version }}.tar.gz
-  sha256: {{ sha }}
+  sha256: {{ sha256 }}
 
 build:
   noarch: python
@@ -31,11 +30,5 @@ test:
 about:
   home: https://github.com/beregond/super_state_machine
   license: BSD 3-Clause
-  summary: Super State Machine gives you utilities to build finite state machines.
-
-extra:
-  recipe-maintainers:
-    - ericdill
-    - licode
-    - tacaswell
-    - CJ-Wright
+  license_file: LICENSE
+  summary: Super State Machine gives you utilities to build finite state machines

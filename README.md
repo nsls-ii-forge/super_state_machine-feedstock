@@ -7,7 +7,7 @@ Package license: BSD 3-Clause
 
 Feedstock license: BSD 3-Clause
 
-Summary: Super State Machine gives you utilities to build finite state machines.
+Summary: Super State Machine gives you utilities to build finite state machines
 
 
 
@@ -80,8 +80,4 @@ In order to produce a uniquely identifiable distribution:
 Feedstock Maintainers
 =====================
 
-* [@CJ-Wright](https://github.com/CJ-Wright/)
-* [@ericdill](https://github.com/ericdill/)
-* [@licode](https://github.com/licode/)
-* [@tacaswell](https://github.com/tacaswell/)
 
